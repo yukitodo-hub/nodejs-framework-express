@@ -45,6 +45,8 @@ app.use('/users', usersRouter);
 const helloRouter = require('./routes/hello');
 app.use('/hello', helloRouter);
 
+const dbRouter = require('./routes/db')
+app.use('/db', dbRouter)
 
 
 // catch 404 and forward to error handler
